@@ -159,7 +159,7 @@ Prefab:
     - target: {fileID: 114216345913687092, guid: 6993c479ea2a04e60ac19aaf9b88b9ab,
         type: 2}
       propertyPath: maxJumpHeight
-      value: 5
+      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114287309931488984, guid: 6993c479ea2a04e60ac19aaf9b88b9ab, type: 2}

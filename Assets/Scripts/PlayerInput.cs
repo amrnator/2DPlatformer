@@ -10,8 +10,6 @@ public class PlayerInput : MonoBehaviour
     StaminaSystem staminaSystem;
     Camera camera;
 
-    bool blinkTracking = false;
-
     void Start()
     {
         player = GetComponent<Player>();
@@ -23,7 +21,7 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        player.SetDirectionalInput(directionalInput);
+        player.SetDirectionalInput(directionalInput * 2);
 
 		Vector2 BlinkInput = new Vector2(Input.GetAxisRaw("BlinkHorizontal"), Input.GetAxisRaw("BlinkVertical"));
 
